@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>UERE - QUER VOAR?</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   
+   <script type="text/javascript" src="js/aeroportos.js"></script>
+   <script src="js/regrasIndex.js"></script>
+   <script type="text/javascript" src="dist/noui/distribute/nouislider.js"></script>
+
+
+  <link href="css/fontawesome/css/all.min.css" rel="stylesheet"> <!--load all styles -->
+  <link href="dist/noui/distribute/nouislider.css" rel="stylesheet">
+</head>
+<body>
+  <nav role="navigation" class="indigo darken-1">
+    <div class="nav-wrapper ">
+
+      <ul class="hide-on-med-and-down">
+        <li><a class="grey lighten-5 btn-large"><img src="img/logo.png" width="50px"></a></li>
+        <li><a href="index.html" class="brand-logo white-text">Uerê - Quer Voar?</a></li>
+      </ul>
+      
+            
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#" class="white-text">Pacotes</a></li>
+        <li><a href="#" class="white-text">Promoções</a></li>
+        <li><a href="#" class="white-text">Experiências</a></li>
+        <li><a href="#" class="white-text">Destinos</a></li>
+        <li><a href="#" class="white-text">  0800-000-000</a></li> 
+        <li><a href="#" class="white-text">  <span class="fab fa-facebook-square fa-2x"></span></a></li>
+        <li><a href="#" class="white-text">  <span class="fab fa-twitter-square fa-2x"></span></a></li>          
+      </ul>
+      
+
+      <ul id="nav-mobile" class="sidenav">
+          <li><a href="#">Pacotes</a></li>
+          <li><a href="#">Promoções</a></li>
+          <li><a href="#">Experiências</a></li>
+          <li><a href="#">Destinos</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+        
+  <nav>
+    <div class="nav-wrapper purple-text text-darken-1" style="background-color: #c4e3ff">
+      <div class="container">
+        <div class="row">
+            <div class="col s2">
+                <span id="dOrigem"></span>
+              </div>
+              <div class="col s2">
+                <span id="dDestino"></span>
+              </div>
+              <div class="col s4">
+                <span id="dDataorigem"></span>
+              </div>
+              <div class="col s2">
+                <span id="dAdulto"></span>
+              </div>
+              <div class="col s2">
+                  <a class="waves-effect waves-light indigo btn-small"><span class="far fa-edit"></span> Modificar</a>
+                </div>
+
+              
+              
+        </div>        
+      </div>  
+    </div>
+  </nav>
+
+
+
+
+  <div class="container">
+    <div class="section">
+
+      <a href="#!" class="">Inicio</a> >
+      <a href="#!" class="">Resultado Pesquisa</a>
+
+      <div class="card-panel">
+        <div class="row">
+          <div class="col s3">
+            <h6 class="purple-text text-darken-1">FILTRAR RESULTADOS</h6>
+            <p class="purple-text text-darken-1"><strong>Companhia Aérea</strong></p>
+            <p>
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>Todas</span>
+                </label>
+              </p>
+              <p>
+                  <label>
+                    <input type="checkbox" class="filled-in" />
+                    <span>GOL</span>
+                  </label>
+                </p>
+                <p>
+                    <label>
+                      <input type="checkbox" class="filled-in" />
+                      <span>LATAM</span>
+                    </label>
+                  </p>
+                  <p>
+                      <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span>AZUL LINHAS AÉREAS</span>
+                      </label>
+                    </p>
+            <p class="purple-text text-darken-1"><strong>Regras de bagagem</strong></p> 
+            <p>
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>Todas</span>
+                </label>
+              </p>
+              <p>
+                  <label>
+                    <input type="checkbox" class="filled-in" />
+                    <span>Voo com mala despachada</span>
+                  </label>
+                </p>
+                <p>
+                    <label>
+                      <input type="checkbox" class="filled-in" />
+                      <span>Voo sem mala despachada</span>
+                    </label>
+                  </p> 
+                  <p class="purple-text text-darken-1"><strong>Horario de Ida</strong></p> 
+                  <form action="#">
+                      <p class="range-field">
+                        <input type="range" id="test5" min="0" max="23" />
+                      </p>
+                    </form> 
+                    <p class="purple-text text-darken-1"><strong>Horario de Volta</strong></p> 
+                  <form action="#">
+                      <p class="range-field">
+                        <input type="range" id="test5" min="0" max="23" />
+                      </p>
+                    </form>
+                    <a class="waves-effect waves-light indigo btn-small"> Limpar Filtro</a>           
+          </div>
+          <div class="col s9">
+              ola center
+          </div>
+        </div>
+         
+
+        
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <footer class="page-footer indigo darken-1">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Entre em contato</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Compra segura</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Receba nossas ofertas</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="center container">
+      2019 Alunos S.I - UVV 
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+           
+  
+  <script src="js/init.js"></script>
+
+  <script>
+
+  $(document).ready(function(){
+    $('.tabs').tabs();
+  });
+
+  $(document).ready(function(){
+    $('select').formSelect();
+  });
+
+  $('.datepicker').datepicker({
+    i18n: {
+    months: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+    monthsShort: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+    weekdays: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sabádo'],
+    weekdaysShort: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab'],
+    weekdaysAbbrev: ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'],
+    today: 'Hoje',
+    clear: 'Limpar',
+    cancel: 'Sair',
+    done: 'Confirmar',
+    labelMonthNext: 'Próximo mês',
+    labelMonthPrev: 'Mês anterior',
+    labelMonthSelect: 'Selecione um mês',
+    labelYearSelect: 'Selecione um ano',
+    selectMonths: true,
+    selectYears: 15,
+    },
+    format: 'dd mmmm, yyyy',
+    container: 'body',
+    minDate: new Date(),
+  });
+
+  $(document).ready(function(){
+    $('input#passagem_origem').autocomplete({
+      data: aero,
+      minLenght:2,
+    });
+  });
+    
+
+  $(document).ready(function(){
+    $('input#passagem_destino').autocomplete({
+      data: aero,
+      minLenght:2,
+    });
+  }); 
+
+  
+
+  //MANIPULAÇÃO DA DOM
+  document.getElementById('dOrigem').innerHTML =  '<i class="fas fa-plane-departure prefix"></i> '+url.origem.substr(0,3);
+  document.getElementById('dDestino').innerHTML =  '<i class="fas fa-plane-arrival prefix"></i> '+url.destino.substr(0,3);
+  document.getElementById('dDataorigem').innerHTML = '<i class="far fa-calendar-check"></i> '+url.dataOrigem.replace(/[\+\.]/g , " ") +' | '+url.dataRetorno.replace(/[\+\.]/g , " ");
+  document.getElementById('dAdulto').innerHTML =  '<i class="fas fa-user"></i> '+url.adulto +' <i class="fas fa-baby"></i> 0';
+
+
+  var slider = document.getElementById('test-slider');
+  noUiSlider.create(slider, {
+   start: [20, 80],
+   connect: true,
+   step: 1,
+   orientation: 'horizontal', // 'horizontal' or 'vertical'
+   range: {
+     'min': 0,
+     'max': 100
+   },
+   format: wNumb({
+     decimals: 0
+   })
+  });
+      
+
+  </script>
+
+  </body>
+</html>

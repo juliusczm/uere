@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>UERE - QUER VOAR?</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   
+   <script type="text/javascript" src="js/aeroportos.js"></script>
+   <script src="js/regrasIndex.js"></script>
+
+
+  <link href="css/fontawesome/css/all.min.css" rel="stylesheet"> <!--load all styles -->
+</head>
+<body>
+  <nav role="navigation" class="indigo darken-1">
+    <div class="nav-wrapper container">
+
+      <ul class="hide-on-med-and-down">
+        <li><a class="grey lighten-5 btn-large"><img src="img/logo.png" width="50px"></a></li>
+        <li><a href="#!" class="brand-logo white-text">Uerê - Quer Voar?</a></li>
+      </ul>
+      
+            
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#" class="white-text">Pacotes</a></li>
+        <li><a href="#" class="white-text">Promoções</a></li>
+        <li><a href="#" class="white-text">Experiências</a></li>
+        <li><a href="#" class="white-text">Destinos</a></li>
+        <li><a href="#" class="white-text">  0800-000-000</a></li> 
+        <li><a href="#" class="white-text">  <span class="fab fa-facebook-square fa-2x"></span></a></li>
+        <li><a href="#" class="white-text">  <span class="fab fa-twitter-square fa-2x"></span></a></li>          
+      </ul>
+      
+
+      <ul id="nav-mobile" class="sidenav">
+          <li><a href="#">Pacotes</a></li>
+          <li><a href="#">Promoções</a></li>
+          <li><a href="#">Experiências</a></li>
+          <li><a href="#">Destinos</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+        
+  
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center lime-text text-accent-2">Conheça a Tailândia</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+        <div class="row center">
+          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Saiba Mais</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="img/background1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+
+
+  <div class="container">
+    <div class="section">
+
+
+          <div class="card-panel" style="margin-top: -50px">
+              <div class="row">
+                  <div class="col s12">
+                    <ul class="tabs">
+                      <li class="tab col s3"><a class="active" href="#test1">Passagens Aéreas</a></li>
+                      <li class="tab col s3"><a href="#test2">Hotéis</a></li>
+                      <li class="tab col s3"><a href="#test3">Pacotes</a></li>
+                    </ul>
+                  </div>
+
+                  <!--CORPO TAB-->
+                  <div id="test1" class="col s12">
+                    <br>
+                      <div class="row">
+                          <form class="col s12" action="passagens_aereas.html" method="get">
+                            <div class="row">
+                              <div class="input-field col s4">
+                                  <i class="fas fa-plane-departure prefix"></i>
+                                <input id="passagem_origem" name="origem" type="text" class="validate">
+                                <label for="passagem_origem">Origem</label>
+                              </div>
+                              <div class="input-field col s4">
+                                  <i class="fas fa-plane-arrival prefix"></i>
+                                <input id="passagem_destino" name="destino" type="text" class="validate">
+                                <label for="passagem_destino">Destino</label>
+                              </div>                              
+                              <div class="input-field col s2">
+                                  <select id="adulto" name="adulto">
+                                    <option name="adulto" value="" disabled selected>1</option>
+                                    <option name="adulto" value="1">1 Adulto</option>
+                                    <option name="adulto" value="2">2 Adultos</option>
+                                    <option name="adulto" value="3">3 Adultos</option>
+                                  </select>
+                                  <label>Adulto</label>
+                              </div>
+                              <div class="input-field col s2">
+                                  <select id="crianca" name="crianca">
+                                    <option value="" disabled selected>0</option>
+                                    <option value="1">1 Criança</option>
+                                    <option value="2">2 Crianças</option>
+                                    <option value="3">3 Crianças</option>
+                                  </select>
+                                  <label>Criança</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s4">
+                                  <i class="far fa-calendar-alt prefix"></i>
+                                  <input id="dataOrigem" name="dataOrigem" type="text" class="datepicker">
+                                  <label for="dataOrigem">Ida</label>
+                                </div>
+
+                                <div id="idVolta" class="input-field col s4">
+                                  <i class="far fa-calendar-alt prefix"></i>
+                                  <input id="dataRetorno" name="dataRetorno" type="text" class="datepicker">
+                                  <label for="dataRetorno">Volta</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                              <div class="input-field col s12">
+                                    <label>
+                                      <input onchange="termoSomenteida(this)" type="checkbox" />
+                                      <span>Somente Ida</span>
+                                    </label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col s12">
+                                  <button type="submit" onclick="myfunction()" class="waves-effect waves blue btn right"><i class="fas fa-search left"></i>PESQUISAR</button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                              
+                  </div>
+                  <div id="test2" class="col s12">Test 2</div>
+                  <div id="test3" class="col s12">Test 3</div>
+                </div>
+          </div>
+                      
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12">
+          <div class="icon-block">
+            <h5 class="">CONFIRA OS PACOTES PROMOCIONAIS</h5>
+          </div>
+        </div>
+
+        
+            <div class="col s4">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/rj.jpg">
+                  <span class="card-title">Rio de Janeiro</span>
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s4">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="img/rj.jpg">
+                    <span class="card-title">Rio de Janeiro</span>
+                  </div>
+                  <div class="card-content">
+                    <p>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">This is a link</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s4">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="img/rj.jpg">
+                      <span class="card-title">Rio de Janeiro</span>
+                    </div>
+                    <div class="card-content">
+                      <p>I am a very simple card. I am good at containing small bits of information.
+                      I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                      <a href="#">This is a link</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col s4">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="img/rj.jpg">
+                        <span class="card-title">Rio de Janeiro</span>
+                      </div>
+                      <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively.</p>
+                      </div>
+                      <div class="card-action">
+                        <a href="#">This is a link</a>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col s4">
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="img/rj.jpg">
+                          <span class="card-title">Rio de Janeiro</span>
+                        </div>
+                        <div class="card-content">
+                          <p>I am a very simple card. I am good at containing small bits of information.
+                          I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                          <a href="#">This is a link</a>
+                        </div>
+                      </div>
+                    </div>
+      
+                    <div class="col s4">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="img/rj.jpg">
+                            <span class="card-title">Rio de Janeiro</span>
+                          </div>
+                          <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.</p>
+                          </div>
+                          <div class="card-action">
+                            <a href="#">This is a link</a>
+                          </div>
+                        </div>
+                      </div>
+         
+
+
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <footer class="page-footer indigo darken-1">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Entre em contato</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Compra segura</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Receba nossas ofertas</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="center container">
+      2019 Alunos S.I - UVV 
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+           
+  
+  <script src="js/init.js"></script>
+
+  <script>
+
+  $(document).ready(function(){
+    $('.tabs').tabs();
+  });
+
+  $(document).ready(function(){
+    $('select').formSelect();
+  });
+
+  $('.datepicker').datepicker({
+    i18n: {
+    months: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+    monthsShort: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+    weekdays: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sabádo'],
+    weekdaysShort: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab'],
+    weekdaysAbbrev: ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'],
+    today: 'Hoje',
+    clear: 'Limpar',
+    cancel: 'Sair',
+    done: 'Confirmar',
+    labelMonthNext: 'Próximo mês',
+    labelMonthPrev: 'Mês anterior',
+    labelMonthSelect: 'Selecione um mês',
+    labelYearSelect: 'Selecione um ano',
+    selectMonths: true,
+    selectYears: 15,
+    },
+    format: 'dd mmmm, yyyy',
+    container: 'body',
+    minDate: new Date(),
+  });
+
+  $(document).ready(function(){
+    $('input#passagem_origem').autocomplete({
+      data: aero,
+      minLenght:2,
+    });
+  });
+    
+
+  $(document).ready(function(){
+    $('input#passagem_destino').autocomplete({
+      data: aero,
+      minLenght:2,
+    });
+  }); 
+
+  </script>
+
+  </body>
+</html>
