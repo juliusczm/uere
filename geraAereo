@@ -1,0 +1,26 @@
+function geraAereo(){
+    
+    var precoIda1 = Math.random() * (1250-300) + 300;
+    var precoIda2 = Math.random() * (1250-300) + 300;
+    var precoVolta1 = Math.random() * (1250-300) + 300;
+    var precoVolta2 = Math.random() * (1250-300) + 300;
+    
+    var hrIda1 = Math.trunc(Math.random() * 23);
+    var hrIda2 = Math.trunc(Math.random() * 23);
+    var hrVolta1 = Math.trunc(Math.random() * 23);    
+    var hrVolta2 = Math.trunc(Math.random() * 23);
+    
+
+    var dados = {
+        "horaIda1": hrIda1,
+        "horaVolta1": hrVolta1,
+        "precoTrechoIda1": precoIda1.toFixed(2),
+        "PrecoTrechoVolta1": precoVolta1.toFixed(2),       
+        "horaIda2": hrIda2,
+        "horaVolta2": hrVolta2 ,
+        "precoTrechoIda2": precoIda2.toFixed(2),
+        "PrecoTrechoVolta2": precoVolta2.toFixed(2)
+    }
+    
+    console.log(dados);
+}
